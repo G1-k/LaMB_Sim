@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	
+	
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="paused" value="false"/>
+		<arg name="gui" value="true"/>
+	</include>
+
+	<!-- Publish fixed transforms -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" 			respawn="false" output="screen">
+		<remap from="/joint_states" to="/robot/joint_states" />
+	</node>
+
+	<!-- Launch lamb -->
+	<include file="$(find lamb_sim)/launch/spawn.launch" />
+
+</launch>
