@@ -1,8 +1,16 @@
 # Simulation of LaMB <br> [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+[//]: # (Image Reference)
+
+[image1]: ./images/lamb_gazebo.png
+
 Simulation of LaMB in Gazebo environment.
 
-#### For Real Robot Instruction [visit here]:https://github.com/G1-k/LaMB.git
+
+![alt_text][image1]
+
+#### For Real Robot Instruction 
+[visit here]:https://github.com/G1-k/LaMB.git
 
 ## Instructions
 
