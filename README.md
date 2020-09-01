@@ -9,32 +9,32 @@ Simulation of LaMB in Gazebo environment.
 
 ![alt_text][image1]
 
-#### For Real Robot Instruction 
-[visit here]:https://github.com/G1-k/LaMB.git
+## Real Robot 
+For Real Robot Instruction [visit here](https://github.com/G1-k/LaMB.git)
 
 ## Instructions
 
-### Give a star to this repo at the top.
+### 1. Give a star to this repo at the top.
 
-### Launch Gazebo world
+### 2. Launch Gazebo world
 `roslaunch lamb_sim room.launch`
 
-### Mapping
+### 3. Mapping
 `roslaunch lamb_sim gmapping.launch`
 
-Visualization
+ Visualization
 ```
 cd /workspace/src/lamb_sim/rviz/
 rviz -d mapping.rviz
 ```
 Save Map - `rosrun map_server map_saver -f /workspace/src/lamb_sim/maps/map_name`
 
-### Navigation
+### 4. Navigation
 ```
 roslaunch lamb_sim amcl.launch map:='map_name'
 roslaunch lamb_sim move_base.launch 
 ```
-### Visualization
+ Visualization
 ```
 cd /workspace/src/lamb_sim/rviz/
 rviz -d navigate.rviz
