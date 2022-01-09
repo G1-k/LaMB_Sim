@@ -16,6 +16,12 @@ For Real Robot Instruction [visit here](https://github.com/G1-k/LaMB.git)
 
 ### 1. Give a star to this repo at the top.
 
+### Install Pre-requiste
+```
+sudo apt-get install ros-melodic-navigation
+
+```
+
 ### 2. Launch Gazebo world
 `roslaunch lamb_sim room.launch`
 
